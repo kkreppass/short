@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script derer src="script.js"></script>
+</head>
+<body>
+<div id="container_all">
+<b class="title">naver.me 단축</b>
+  <div class="madeby">by ukjae</div>
+<div id="container">
+<input type="text" id="inputLink" placeholder="링크를 입력하세요">
+<button id="shortenButton" onclick="handleShorten()"">단축</button>
+</div>
+<div>
+<textarea id="output" readonly></textarea>
+</div>
+<button id="copyButton" onclick="copyToClipboard(document.getElementById('output').value)">복사</button>
+</div>
+</body>
+</html>
